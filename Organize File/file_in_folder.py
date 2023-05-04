@@ -5,7 +5,6 @@ moves images, videos, and audio files
 import os
 import shutil
 
-
 audio = (".3ga", ".aac", ".ac3", ".aif", ".aiff",
          ".alac", ".amr", ".ape", ".au", ".dss",
          ".flac", ".flv", ".m4a", ".m4b", ".m4p",
@@ -19,14 +18,18 @@ video = (".webm", ".MTS", ".M2TS", ".TS", ".mov",
 img = (".jpg", ".jpeg", ".jfif", ".pjpeg", ".pjp", ".png",
        ".gif", ".webp", ".svg", ".apng", ".avif")
 
+
 def is_audio(file):
     return os.path.splitext(file)[1] in audio
+
 
 def is_video(file):
     return os.path.splitext(file)[1] in video
 
+
 def is_image(file):
     return os.path.splitext(file)[1] in img
+
 
 os.chdir(os.getcwd())
 path = os.getcwd()
