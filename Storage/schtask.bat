@@ -1,0 +1,1 @@
+schtasks /create /tn "storage_c" /tr "storage.bat" /sc minute /st 05:00 /et 23:00 /k

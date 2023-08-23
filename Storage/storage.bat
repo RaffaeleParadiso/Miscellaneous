@@ -1,0 +1,1 @@
+C:\\Users\\raffa\\Anaconda3\\condabin\\activate.bat && python "C:\Users\raffa\storage.py" && conda deactivate
